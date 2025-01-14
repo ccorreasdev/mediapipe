@@ -39,7 +39,7 @@ faceMesh.onResults((results) => {
 
             const layout = document.querySelector('.layout');
             if (distancia >= 0.10) {
-                layout.style.backgroundColor = 'red';
+                layout.style.backgroundColor = '#f73828';
             } else {
                 layout.style.backgroundColor = 'black';
             }
