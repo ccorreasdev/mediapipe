@@ -1,0 +1,49 @@
+/** Fonts **/
+@font-face {
+  font-family: "AirStrike";
+  src: url("../font/airstrike/airstrike.ttf");
+}
+
+/** Variables **/
+:root {
+  --primary: #f73828;
+  --bg-color: #000000;
+  --white: #ffffff;
+  --black: #1a1414;
+}
+
+/** Normalize **/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins";
+  font-size: 1.6rem;
+  background-color: var(--bg-color);
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+/** Canvas and video frame **/
+.video__frame {
+  display: none;
+}
+
+.video__frame,
+.canvas__frame {
+  width: 20rem;
+  height: 20rem;
+  border: solid 0.1rem var(--white);
+  aspect-ratio: 16 / 9;
+}
