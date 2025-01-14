@@ -1,3 +1,5 @@
+const bar = document.querySelector("#ball");
+
 function calcularDistancia(p1, p2) {
     const dx = p2.x - p1.x;
     const dy = p2.y - p1.y;
@@ -63,6 +65,15 @@ hands.onResults((results) => {
             console.log('Distancia entre dedos:', distancia);
 
             const layout = document.querySelector('.layout');
+            const widthBar = distancia * 100 * 2 + "%";
+
+
+            if ((distancia * 100 * 2) >= 100) {
+                bar.style.width = 100 + "%";
+            } else {
+                bar.style.width = distancia * 100 * 2 + "%";
+
+            }
 
             if (distancia >= 0.10) {
                 layout.style.backgroundColor = 'black';
