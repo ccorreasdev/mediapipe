@@ -21,8 +21,28 @@
 
 <body class="layout">
 
-    <video class="video__frame" id="input_video" autoplay playsinline></video>
-    <canvas class="canvas__frame" id="canvas"></canvas>
+    <main class="main__layout container">
+
+        <div class="main__left">
+            <nav class="nav__layout">
+                <a class="nav__link" href="./index.html">
+                    <img class="nav__icon" src="./assets/img/face.svg" alt="hands">
+                    <p class="nav__text">Face</p>
+                </a>
+                <a class="nav__link" href="./hands.html">
+                    <img class="nav__icon" src="./assets/img/hands.svg" alt="hands">
+                    <p class="nav__text">Hands</p>
+                </a>
+            </nav>
+        </div>
+
+        <div class="main__right"> <video class="video__frame" id="input_video" autoplay playsinline></video>
+            <canvas class="canvas__frame" id="canvas"></canvas>
+        </div>
+
+    </main>
+
+
 </body>
 
 </html>

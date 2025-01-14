@@ -47,3 +47,71 @@ body {
   border: solid 0.1rem var(--white);
   aspect-ratio: 16 / 9;
 }
+
+.main__layout {
+  width: 100%;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav__layout {
+  width: 10rem;
+  height: 40rem;
+  background-color: var(--primary);
+  border-radius: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  position: relative;
+  color: var(--white);
+}
+
+.nav__icon {
+  width: 7rem;
+  transition: all 300ms ease-in-out;
+}
+
+.nav__icon:hover {
+  filter: invert(1);
+}
+
+.nav__text {
+  position: absolute;
+  top: 2rem;
+  right: -8rem;
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+  width: 100%;
+  height: 2rem;
+  background: var(--primary);
+  font-size: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.nav__link:hover .nav__text {
+  opacity: 1;
+}
